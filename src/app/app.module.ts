@@ -12,6 +12,9 @@ import { CurrentTrainingComponent } from './training/current-training/current-tr
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './ui-material.module';
+import { FlexLayoutModule } from '@ngbracket/ngx-layout';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { MaterialModule } from './ui-material.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
