@@ -1,0 +1,24 @@
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 18rem;
+    height: 18rem;
+}
+
+#child-1 {
+    background-color: #d60707 ;
+}
+#child-2 {
+    background-color: #05a100 ;
+}
+#child-3 {
+    background-color: #4f07d6 ;
+}
+#child-4 {
+    background-color: #ffd900 ;
+}
