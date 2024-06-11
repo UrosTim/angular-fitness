@@ -36,6 +36,15 @@
 :: Card ::
     https://material.angular.io/components/card/overview
 
+:: Select ::
+    https://material.angular.io/components/select/overview
+
+:: Spinner :: 
+    https://material.angular.io/components/progress-spinner/overview
+
+:: Table ::
+    https://material.angular.io/components/table/overview
+
 */
 
 import { NgModule } from "@angular/core";
@@ -51,6 +60,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
     imports: [
@@ -66,6 +79,9 @@ import {MatCardModule} from '@angular/material/card';
         MatListModule,
         MatTabsModule,
         MatCardModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatTableModule,
     ],
     exports: [
         MatButtonModule, 
@@ -80,6 +96,9 @@ import {MatCardModule} from '@angular/material/card';
         MatListModule,
         MatTabsModule,
         MatCardModule,
+        MatSelectModule,
+        MatProgressSpinnerModule,
+        MatTableModule,
     ]
 })
 

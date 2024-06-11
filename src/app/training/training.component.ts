@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-training',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class TrainingComponent {
 
+  @Output()
+
+  ongoingTraining = false;
 }

@@ -5,5 +5,37 @@
             Start training
         </mat-card-title>
 
+        <mat-card-content fxLayoutAlign="center">
+
+            <mat-form-field>
+
+                <mat-select placeholder="Choose exercise">
+                    
+                    <mat-option value="walking">
+                        Walking
+                    </mat-option>
+                    <mat-option value="running">
+                        Running
+                    </mat-option>
+                    <mat-option value="sprinting">
+                        Squats
+                    </mat-option>
+
+                </mat-select>
+
+            </mat-form-field>
+
+        </mat-card-content>
+
+        <mat-card-actions fxLayoutAlign="center">
+            <button 
+                type="submit" 
+                mat-raised-button 
+                color="warn"
+                (click)="onStartTraining()">
+                Start
+            </button>
+        </mat-card-actions>
+
     </mat-card>
 </section>

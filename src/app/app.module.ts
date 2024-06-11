@@ -14,6 +14,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './ui-material.module';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { FormsModule } from '@angular/forms';
+import { TrainingService } from './training/training.service';
 
 
 @NgModule({
@@ -25,17 +26,18 @@ import { FormsModule } from '@angular/forms';
     TrainingComponent,
     PreviousTrainingComponent,
     CurrentTrainingComponent,
-    NewTrainingComponent
+    NewTrainingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    TrainingService,
   ],
   bootstrap: [AppComponent]
 })
