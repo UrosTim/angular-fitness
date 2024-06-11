@@ -1,7 +1,7 @@
 form {
     height: 34rem;
     border: .1rem solid #969696;
-    background-color: aliceblue;
+    background-color: rgb(151, 151, 151);
 }
 
 mat-form-field {

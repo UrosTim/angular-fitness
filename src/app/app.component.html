@@ -4,7 +4,24 @@
 
     <mat-sidenav #sidenav opened="true">
 
-        <p>Sidenav</p>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/signup" (click)="sidenav.close()">
+                <mat-icon>person</mat-icon>
+                Signup
+            </a>
+            <a mat-list-item routerLink="/login" (click)="sidenav.close()">
+                <mat-icon>login</mat-icon>
+                Login
+            </a>
+            <a mat-list-item routerLink="/training" (click)="sidenav.close()">
+                <mat-icon>fitness_center</mat-icon>
+                Training
+            </a>
+            <a mat-list-item routerLink="/" (click)="sidenav.close()">
+                <mat-icon>logout</mat-icon>
+                Logout
+            </a>
+        </mat-nav-list>
 
     </mat-sidenav>
 
@@ -19,11 +36,11 @@
                 </button>
             </div>
     
-            <div>
-                Logo
+            <div fxHide.gt-xs>
+                <a routerLink="/">Logo</a>
             </div>
     
-            <div>
+            <div fxFlex fxLayoutAlign="end" fxLayoutGap="12px" fxHide.xs>
                 <a routerLink="/signup">Signup</a>
                 <a routerLink="/login">Login</a>
                 <a routerLink="/training">Training</a>
