@@ -16,6 +16,7 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { FormsModule } from '@angular/forms';
 import { TrainingService } from './training/training.service';
 import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
+import { UserService } from './auth/user.service';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { StopTrainingComponent } from './training/current-training/stop-training
   providers: [
     provideAnimationsAsync(),
     TrainingService,
+    UserService,
   ],
   bootstrap: [AppComponent]
 })
