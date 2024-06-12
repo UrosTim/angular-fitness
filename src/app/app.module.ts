@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { TrainingService } from './training/training.service';
 import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
 import { UserService } from './auth/user.service';
+import { ProfileComponent } from './auth/profile/profile.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { UserService } from './auth/user.service';
     CurrentTrainingComponent,
     NewTrainingComponent,
     StopTrainingComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

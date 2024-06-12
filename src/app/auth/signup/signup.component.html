@@ -63,5 +63,9 @@
             [disabled]="f.invalid">
             Submit
         </button>
+
+        <mat-label id="errorText" *ngIf="errorExists">{{ errorText }}</mat-label>
+        <a routerLink="/login">Go to login.</a>
+
     </form>
 </section>

@@ -7,3 +7,18 @@ form {
 mat-form-field {
     width: 400px;
 }
+
+a{
+    color: #919191;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#errorText {
+    color: rgb(255, 116, 65);
+    font-weight: bold;
+}
