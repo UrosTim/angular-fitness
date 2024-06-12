@@ -15,6 +15,7 @@ import { MaterialModule } from './ui-material.module';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import { FormsModule } from '@angular/forms';
 import { TrainingService } from './training/training.service';
+import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { TrainingService } from './training/training.service';
     PreviousTrainingComponent,
     CurrentTrainingComponent,
     NewTrainingComponent,
+    StopTrainingComponent,
   ],
   imports: [
     BrowserModule,
