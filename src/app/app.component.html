@@ -28,7 +28,7 @@
     <mat-sidenav-content>
 
         <mat-toolbar color="primary">
-            <div>
+            <div fxHide.gt-xs>
                 <button (click)="sidenav.toggle()">
                     <mat-icon>
                         menu
@@ -44,6 +44,9 @@
                 <a routerLink="/signup">Signup</a>
                 <a routerLink="/login">Login</a>
                 <a routerLink="/training">Training</a>
+            </div>
+
+            <div>
                 <button 
                     mat-raised-button 
                     color="primary" 

@@ -18,6 +18,8 @@ import { TrainingService } from './training/training.service';
 import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
 import { UserService } from './auth/user.service';
 import { ProfileComponent } from './auth/profile/profile.component';
+import { UsersComponent } from './users/users.component';
+
 
 
 @NgModule({
@@ -32,6 +34,7 @@ import { ProfileComponent } from './auth/profile/profile.component';
     NewTrainingComponent,
     StopTrainingComponent,
     ProfileComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
