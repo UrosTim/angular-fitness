@@ -36,7 +36,7 @@
                 </button>
             </div>
     
-            <div fxHide.gt-xs>
+            <div>
                 <a routerLink="/">Logo</a>
             </div>
     
@@ -44,6 +44,12 @@
                 <a routerLink="/signup">Signup</a>
                 <a routerLink="/login">Login</a>
                 <a routerLink="/training">Training</a>
+                <button 
+                    mat-raised-button 
+                    color="primary" 
+                    (click)="openProfile(this.userService.currentUser.id)">
+                    {{ this.userService.currentUser.email }}
+                </button>
             </div>
         </mat-toolbar>
 
