@@ -9,6 +9,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { TrainingComponent } from './training/training.component';
 import { UsersComponent } from './users/users.component';
+import { UserFormComponent } from './users/user-form/user-form.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
@@ -16,7 +17,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'training', component: TrainingComponent },
   { path: 'users', component: UsersComponent },
-
+  { path: 'users/add', component: UserFormComponent },
 ];
 
 @NgModule({

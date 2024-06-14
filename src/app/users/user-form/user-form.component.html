@@ -1,0 +1,39 @@
+<div class="shadow border p-3">
+    <form [formGroup]="useForm">
+        <div class="flex flex-wrap">
+            <mat-form-field class="w-full">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" type="text" name="name" id="name">
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" name="email" id="email">
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+                <mat-label>Age</mat-label>
+                <input matInput formControlName="age" type="text" name="age" id="age">
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+                <mat-label>Adderess</mat-label>
+                <input matInput formControlName="address" type="text" name="address" id="address">
+            </mat-form-field>
+
+            <mat-form-field class="w-full">
+                <mat-label>Passwort</mat-label>
+                <input matInput formControlName="password" type="password" name="password" id="password">
+            </mat-form-field>
+        </div>
+
+        <div class="flex justify-center">
+            <button 
+                mat-raised-button 
+                (click)="addUser()"
+                color="primary">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>

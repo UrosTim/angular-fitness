@@ -13,12 +13,15 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './ui-material.module';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TrainingService } from './training/training.service';
 import { StopTrainingComponent } from './training/current-training/stop-training/stop-training.component';
 import { UserService } from './auth/user.service';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { UsersComponent } from './users/users.component';
+import { provideHttpClient } from '@angular/common/http';
+import { UsersService } from './services/users.service';
+import { UserFormComponent } from './users/user-form/user-form.component';
 
 
 
@@ -35,6 +38,7 @@ import { UsersComponent } from './users/users.component';
     StopTrainingComponent,
     ProfileComponent,
     UsersComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,11 +46,14 @@ import { UsersComponent } from './users/users.component';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     provideAnimationsAsync(),
+    provideHttpClient(),
     TrainingService,
     UserService,
+    UsersService,
   ],
   bootstrap: [AppComponent]
 })
